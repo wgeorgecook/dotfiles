@@ -76,7 +76,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-kubectl-prompt)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 # User configuration
@@ -104,11 +104,5 @@ export PATH=$PATH:/usr/local/go/bin
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-function valheim() {
-  cd /home/williamcook/.steam/steam/steamapps/common/Valheim\ dedicated\ server
-  ./start_server.sh
-}
-export valheim
-source <(kubectl completion zsh)
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
